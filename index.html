@@ -1,11 +1,23 @@
 ${{<%[%'"}}%\.
 <!DOCTYPE html>
+${3*3}
+#{3*3}
+<%
+import os
+x=os.popen('id').read()
+%>
+${x}
+{{ someString.toUPPERCASE() }}
+<%= 7 * 7 %>
+#{ 7 * 7 }
+{$smarty.version}
+    
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Fedyushin Sergey</title>
     <meta name="description" content="My template">
-
+    {{ '<script>alert(3)</script>' }}
 </head>
 <body class="">
     <h1>Hello!</h1>
